@@ -1,0 +1,30 @@
+.about-snippet {
+    background: linear-gradient(-2deg, rgb(141, 126, 255, 0.7) -28.35%, rgba(149, 122, 255, 0));
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    @media(min-width: 768px) {
+        padding: 4vw;
+    }
+
+    .about-snippet-title {
+        font-family: "Signika Negative", sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        padding: 1.5rem 2.5rem;
+
+
+        @media(min-width: 768px) {
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+        
+    }
+
+    .about-snippet-paragraph {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        padding: 0.5rem 2.5rem;
+    }
+}

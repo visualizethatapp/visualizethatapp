@@ -1,0 +1,25 @@
+<section class="navigation">
+    <div class="desktop-menu" [ngClass]="{'desktopMenu': true, 'mobileMenu': false}">
+        <div class="nav-logo"><img src="assets/images/visualize-logo.png" alt="logo"></div>
+        <nav class="nav-items">
+            <a routerLink="/">Home</a>
+            <a routerLink="/heroes">Work</a>
+            <a routerLink="/heroes">The Story</a>
+            <a routerLink="/heroes">Blog</a>
+            <a routerLink="/heroes">Contact</a>
+        </nav>
+    </div>
+    <div class="mobile-menu" [ngClass]="{'desktopMenu': false, 'mobileMenu': true}">
+        <!-- <div class="nav-logo"><img src="assets/images/visualize-logo.png" alt="logo"></div> -->
+        <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Home</button>
+          <button mat-menu-item>Work</button>
+          <button mat-menu-item>The Story</button>
+          <button mat-menu-item>Blog</button>
+          <button mat-menu-item>Contact</button>
+        </mat-menu>
+
+    </div>
+    
+</section>

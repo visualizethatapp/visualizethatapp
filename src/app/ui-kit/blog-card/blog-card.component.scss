@@ -1,0 +1,114 @@
+.blog-cards {
+    padding: 0;
+    background: radial-gradient(rgba(141, 126, 255, 0.15), transparent);
+
+    @media(min-width: 768px) {
+     padding: 4vw;   
+    }
+
+    &__title {
+        font-family: "Signika Negative", sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        padding: 1.5rem 2.5rem;
+
+
+        @media(min-width: 768px) {
+            font-size: 3.5rem;
+            line-height: 1.5;
+        }
+    }
+ 
+    &__cards {
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width: 768px) {
+    flex-direction: row;
+    }
+
+        .card-01 {
+                    max-width: 45vh;
+                    width: 100%;
+                    box-shadow: 0 5px 10px 0 rgba(141,126,255, 0.4);
+                    border-radius: 10px;
+                    margin: 2rem;
+                    position: relative;
+                    z-index: 0;
+
+                    @media(min-width: 768px) {
+                        max-width: 40vh;
+                    }
+            .card-copy {
+                padding: 2rem 1.5rem 0;
+    
+                @media(min-width: 768px) {
+                    // padding: 2rem 0.5rem 0 0;
+                }
+    
+                @media(min-width: 1024px) {
+                padding: 1rem 2rem 0em 2rem;
+                }
+    
+                h1 {
+                    font-size: 2em;
+                    margin: 0;
+                }
+            }
+    
+            .card-image {
+                img {
+                    max-width: 60vh;
+                    width: 100%;
+    
+                    @media(min-width: 768px) {
+                        // width: 65vw;
+                    }
+    
+                    @media(min-width: 1024px) {
+                    //   width: 35vw;  
+                    }
+                }
+    
+                .label {
+                    background: rgba(141,126,255);
+                    width: 7rem;
+                    padding: 0.3rem 0.3rem 0.3rem 1rem;
+                    color: #fff;
+                    border-radius: 0rem 1rem 1rem 0;
+                    z-index: 3;
+                    position: absolute;
+                    margin: 2rem 0rem;
+                    box-shadow: inset 12px 0 22px -14px;
+                  } 
+            }
+
+            .card-copy-icons {
+                display:  flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin: 2rem 1.5rem 3rem;
+
+                @media(min-width:768px) {
+                margin: 2rem 1.5rem 3rem
+                }
+              
+              .card-copy-icon {
+              background: rgba(133,129,255);
+              box-shadow: 0 5px 10px 0 rgba(141, 126, 255, 0.4);
+              color: white;  
+              border-radius: 17px;
+              margin-right: 1rem;
+              padding: 0.5em;
+              
+              @media(min-width: 1440px) {
+                padding: 0.5em;
+              }
+              }
+            }
+        }
+
+    }
+}
